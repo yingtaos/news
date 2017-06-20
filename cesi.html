@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+	</head>
+	<body>
+		<script type="text/javascript">
+			$.ajax({
+				type:"get",
+				url:"http://v.juhe.cn/toutiao/index?type=&key=680cd4aa6b5047e99dbef67695f1e192",
+				async:true,
+				dataType:"JSONP",
+				success:function(res){
+					console.log(typeof res)
+				}
+			});
+//			const url ="http://v.juhe.cn/toutiao/index?type=&key=680cd4aa6b5047e99dbef67695f1e192";
+//			axios.get(url,{jsonp:"jsonp"})
+//			.then(res=>{
+//				console.log( res)
+//			})
+//			.catch(err=>{
+//				console.log( err )
+//			})
+
+		</script>
+	</body>
+</html>
